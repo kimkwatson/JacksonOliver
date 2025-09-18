@@ -19,6 +19,7 @@
 
 body {
     margin: 0 auto;
+    display: block;
 }
 
 header {
@@ -85,46 +86,14 @@ header span::before {
 }
 
 #hero-section {
-    max-height: 580px;
     text-align: center;
 }
 
 #hero {
     width: 60%;
-}
-
-.overlay {
-  position: absolute; 
-  top: 20%; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: var(--sienna); 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-family: "Gasoek One", sans-serif;
-    font-weight: 200;
-    font-size: 2rem;
-}
-
-#hero-section:hover .overlay {
-  opacity: 1;
-}
-
-#caption {
-    position: absolute;
-    top: 50%;
-    left: 44%;
-    background-color: var(--black);
-    color: var(--red);
-    opacity: .4;
-    font-family: "Gasoek One", sans-serif;
-    font-weight: 200;
-    font-size: 2rem;
-    padding: 4rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--green);
 }
 
 button {
@@ -132,7 +101,6 @@ button {
     background-color: var(--mint);
     padding: 1rem;
     border: none;
-    border-radius: 45px;
     cursor: pointer;
     transition: background-color 1s ease-out, transform 1s ease-out;
 }
@@ -144,7 +112,7 @@ button:hover {
 #action {
     font-size: 1.5rem;
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 46%;
     z-index: 1;
 }
@@ -186,7 +154,8 @@ button:hover {
 }
 
 #photo-card img {
-    border: solid 20px var(--green);
+    padding: 18px;
+    border: solid 2px var(--green);
     width: 350px;
     transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
