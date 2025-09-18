@@ -267,6 +267,11 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+footer img {
+    padding: .5rem;
+    padding-left: 0;
+}
+
 #contact-info {
     padding: 1.5rem;
     margin-left: 5rem; 
