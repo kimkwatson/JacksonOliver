@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Gasoek+One&family=Lora&family=Manrope&family=Quicksand&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik+80s+Fade&display=swap');
+
+:root {
+    --black: #080708;
+    --blue: #3772FF;
+    --red: #DF2935;
+    --yellow: #FDCA40;
+    --gray: #E6E8E6;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 80px;
+    border-radius: 200px;
+    padding: .5rem;
+}
+
+header img {
+    background-color: var(--red);
+    margin: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-self: end;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    color: white;
+    text-decoration: none;
+    font-family: "Rubik 80s Fade", system-ui;
+    font-size: 1.5rem;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:visited {
+    color: inherit;
+}
+
+nav a:hover {
+    color: var(--red);
+}
+
+header span {
+    color: white;
+    text-align: right;
+    font-family: "Quicksand", sans-serif;
+    align-self: end;
+    padding: 1rem;
+}
+
+header span::before {
+    content: "\01F3A7";
+}
+
+#hero-section {
+    max-height: 580px;
+}
+
+#hero {
+    width: 100%;
+}
+
+.overlay {
+  position: absolute; 
+  top: 20%; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: "Gasoek One", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+#hero-section:hover .overlay {
+  opacity: 1;
+}
+
+#caption {
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    background-color: var(--black);
+    color: var(--red);
+    opacity: .4;
+    font-family: "Gasoek One", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    padding: 4rem;
+}
+
+button {
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--red);
+    padding: 1rem;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: background-color 1s ease-out, transform 1s ease-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#action {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    z-index: 1;
+}
+
+#bio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#bio-card {
+    text-align: center;
+    background-color: var(--black);
+    color: white;
+    padding: 1.5rem;
+}
+
+#bio-card h2 {
+    font-family: "Gasoek One", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    border-bottom: solid 1px var(--gray);
+    padding: 2rem;
+}
+
+#bio-card p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+}
+
+#photo-card {
+    padding: .5rem;
+    text-align: center;
+    background-image: url("../images/Equalizer.png");
+    background-color: var(--black);
+}
+
+#photo-card img {
+    border: solid 20px var(--gray);
+    width: 350px;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+#photo-card img:hover {
+    width: 450px;
+}
+
+#categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    grid-gap: 2rem;
+    padding: 2rem;
+}
+
+.category-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 100%;
+    height: 100%;
+    text-align: right;
+    padding-bottom: 3rem;
+    transition: transform 300ms ease-in-out;
+}
+
+.category-card:hover {
+    transform: translateY(-25px);
+}
+
+.category-image {
+    width: 100%;
+    height: 70%;
+}
+
+.category-title {
+    font-family: "Rubik 80s Fade", system-ui;
+    font-size: 1.75rem;
+    padding-right: 1rem;
+}
+
+.category-button {
+    margin-right: 1rem;
+    font-size: smaller;
+}
+
+#reviews {
+    text-align: center;
+    background-color: white;
+    color: var(--black);
+    padding: 2rem;
+
+}
+
+#reviews div {
+    margin: 2rem;
+}
+
+#reviews > div {
+    min-width: 0;
+}
+
+#reviews h3 {
+    font-family: "Aleo", serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#reviews p {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#reviews > button {
+    border-radius: none;
+    display: block;
+    box-sizing: border-box;
+}
+
+.stars {
+    color: var(--red);
+    font-size: 2rem;
+    margin: 0;
+}
+
+footer {
+    font-family: "Roboto Flex", sans-serif;
+    background-color: var(--red);
+    color: var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#contact-info {
+    padding: 1.5rem;
+    margin-left: 5rem; 
+    display: block;
+}
+
+#footer-menu {
+    grid-column: 4;
+    padding: 1.5rem;
+}
