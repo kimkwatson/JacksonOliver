@@ -17,8 +17,12 @@
     --white: #F4F4F4;
 }
 
+*, *::before, *::after { box-sizing: border-box; }
+
+img, video, svg { max-width: 100%; height: auto; display: block; }
+
 body {
-    margin: 0 auto;
+    margin: 0;
     display: block;
 }
 
@@ -86,14 +90,32 @@ header span::before {
 }
 
 #hero-section {
+    display: grid;
+    position: relative;
+    overflow: hidden;
     text-align: center;
+    width: 80%;
+    margin-inline: auto;
+    padding: 1rem;
+    border: 2px solid var(--green);
+}
+
+#hero-section > a {
+  grid-area: 1 / 1;
+  place-self: end center;
+  margin: clamp(12px, 4vw, 32px);
+  z-index: 1;
 }
 
 #hero {
-    width: 60%;
-    padding: 1rem;
-    margin: 1rem;
-    border: 2px solid var(--green);
+    grid-area: 1 / 1;
+    width: 100%;
+    height: clamp(320px, 60vh, 720px);
+    object-fit: cover;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 button {
@@ -111,9 +133,7 @@ button:hover {
 
 #action {
     font-size: 1.5rem;
-    position: absolute;
-    top: 60%;
-    left: 46%;
+    margin: clamp(12px, 4vw, 32px); /* spacing from bottom */
     z-index: 1;
 }
 
