@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Gasoek+One&family=Lora&family=Manrope&family=Quicksand&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Gasoek+One&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Lora&family=Manrope&family=Quicksand&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik+80s+Fade&display=swap');
 
 :root {
     --black: #080708;
@@ -6,6 +6,15 @@
     --red: #DF2935;
     --yellow: #FDCA40;
     --gray: #E6E8E6;
+
+    --plum: #4E3D42;
+    --green: #829399;
+    --mint: #D0F4EA;
+    --coral: #FF8552;
+    --sienna: #DD6E42;
+    --melon: #FFC9B9;
+    --pink: #F2CCC3;
+    --white: #F4F4F4;
 }
 
 body {
@@ -13,7 +22,7 @@ body {
 }
 
 header {
-    background-color: var(--black);
+    background-color: var(--green);
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     margin: 0 auto;
@@ -26,7 +35,7 @@ header {
 }
 
 header img {
-    background-color: var(--red);
+    background-color: var(--plum);
     margin: 1rem;
 }
 
@@ -46,8 +55,8 @@ nav ul {
 nav li {
     color: white;
     text-decoration: none;
-    font-family: "Rubik 80s Fade", system-ui;
-    font-size: 1.5rem;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 1.25rem;
 }
 
 nav a:link {
@@ -60,7 +69,7 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: var(--red);
+    color: var(--coral);
 }
 
 header span {
@@ -77,10 +86,11 @@ header span::before {
 
 #hero-section {
     max-height: 580px;
+    text-align: center;
 }
 
 #hero {
-    width: 100%;
+    width: 60%;
 }
 
 .overlay {
@@ -88,7 +98,7 @@ header span::before {
   top: 20%; 
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
+  color: var(--sienna); 
   width: 100%;
   transition: .5s ease;
   opacity:0;
@@ -119,7 +129,7 @@ header span::before {
 
 button {
     font-family: "Quicksand", sans-serif;
-    background-color: var(--red);
+    background-color: var(--mint);
     padding: 1rem;
     border: none;
     border-radius: 45px;
@@ -145,17 +155,19 @@ button:hover {
 }
 
 #bio-card {
-    text-align: center;
-    background-color: var(--black);
-    color: white;
+    text-align: right;
+    background-color: white;
+    color: black;
     padding: 1.5rem;
+    width: 60%;
+    justify-self: right;
 }
 
 #bio-card h2 {
-    font-family: "Gasoek One", sans-serif;
+    font-family: "Lora", sans-serif;
     font-weight: 200;
     font-size: 2rem;
-    border-bottom: solid 1px var(--gray);
+    border-bottom: solid 1px var(--green);
     padding: 2rem;
 }
 
@@ -163,17 +175,18 @@ button:hover {
     font-family: "Quicksand", sans-serif;
     font-size: 1.5rem;
     padding: 2.5rem;
+    text-align: right;
 }
 
 #photo-card {
     padding: .5rem;
-    text-align: center;
-    background-image: url("../images/Equalizer.png");
-    background-color: var(--black);
+    text-align: left;
+    background-color: white;
+    width: 60%;
 }
 
 #photo-card img {
-    border: solid 20px var(--gray);
+    border: solid 20px var(--green);
     width: 350px;
     transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
@@ -254,14 +267,14 @@ button:hover {
 }
 
 .stars {
-    color: var(--red);
+    color: var(--coral);
     font-size: 2rem;
     margin: 0;
 }
 
 footer {
     font-family: "Roboto Flex", sans-serif;
-    background-color: var(--red);
+    background-color: var(--green);
     color: var(--black);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
