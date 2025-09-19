@@ -34,7 +34,7 @@ header {
 }
 
 #logo {
-    width: 80px;
+    width: 60px;
     border-radius: 200px;
     padding: .5rem;
 }
@@ -94,7 +94,7 @@ header span::before {
     position: relative;
     overflow: hidden;
     text-align: center;
-    width: 80%;
+    width: 60%;
     margin-inline: auto;
     padding: 1rem;
     border: 2px solid var(--green);
