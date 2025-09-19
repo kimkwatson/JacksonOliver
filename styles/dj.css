@@ -15,6 +15,7 @@
     --melon: #FFC9B9;
     --pink: #F2CCC3;
     --white: #F4F4F4;
+    --mellow: #F8DE7E;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -74,7 +75,7 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: var(--coral);
+    color: var(--mellow);
 }
 
 header span {
