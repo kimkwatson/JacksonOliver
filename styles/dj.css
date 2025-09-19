@@ -26,6 +26,7 @@ body {
     margin: 0;
     display: block;
     justify-items: center;
+    background-color: var(--white);
 }
 
 main {
@@ -33,6 +34,7 @@ main {
     border: 2px solid var(--green);
     margin: 1rem;
     padding: 1rem;
+    background-color: white;
 }
 
 header {
@@ -105,7 +107,7 @@ header span::before {
     position: relative;
     overflow: hidden;
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin-inline: auto;
     padding: .5rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -143,7 +145,7 @@ button:hover {
 }
 
 #action {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: clamp(12px, 4vw, 32px); /* spacing from bottom */
     z-index: 1;
 }
@@ -152,13 +154,14 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-top: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
     margin: 2rem;
 }
 
 #bio-card {
     text-align: right;
     background-color: white;
-    color: black;
+    color: gray;
     padding: 1.5rem;
     width: 60%;
     justify-self: right;
@@ -168,7 +171,7 @@ button:hover {
     font-family: "Lora", sans-serif;
     font-weight: 200;
     font-size: 2rem;
-    border-bottom: solid 2px var(--sienna);
+    border-bottom: solid 2px var(--green);
     padding: 2rem;
 }
 
@@ -188,14 +191,13 @@ button:hover {
 
 #photo-card img {
     margin: 18px;
-    border: solid 2px var(--green);
-    width: 350px;
+    width: 275px;
     transition: width 2s, height 2s, background-color 2s, transform 2s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #photo-card img:hover {
-    width: 450px;
+    width: 350px;
 }
 
 #categories {
@@ -259,6 +261,10 @@ button:hover {
     border-top: 2px solid var(--mellow);
     width: 25%;
     place-self: center;
+}
+
+#reviews div:first-child {
+    border-top: none;
 }
 
 #reviews p {
