@@ -156,7 +156,7 @@ button:hover {
     font-family: "Lora", sans-serif;
     font-weight: 200;
     font-size: 2rem;
-    border-bottom: solid 1px var(--green);
+    border-bottom: solid 2px var(--mellow);
     padding: 2rem;
 }
 
@@ -273,6 +273,7 @@ footer {
 footer img {
     padding: .5rem;
     padding-left: 0;
+    display: inline;
 }
 
 #contact-info {
